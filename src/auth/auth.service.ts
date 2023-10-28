@@ -58,6 +58,9 @@ export class AuthService {
     return await this.userModel.find().exec();
   }
 
+  async getProfle(user: User): Promise<User> {
+    return user
+  }
   findOne(id: number) {
     return `This action returns a #${id} auth`;
   }
